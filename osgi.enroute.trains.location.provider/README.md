@@ -1,6 +1,6 @@
 ### CeBIT changes to IoT Trains Demo
 
-The existing architecture is described at  [enroute.osgi.org/trains/200-architecture.html](http://enroute.osgi.org/trains/200-architecture.html)
+The existing architecture is described at [v2archive.enroute.osgi.org/trains/200-architecture.html](https://v2archive.enroute.osgi.org/trains/200-architecture.html)
 
 
 #### Hardware changes
@@ -22,7 +22,7 @@ All changes have been made to a new **cebit** branch of the osgi.iot.contest.sdk
 We added a new bluetooth reader to run on the Pi. It is an OSGi Bundle that leverages the Kura Bluetooth and MQTT services. The bundle interfaces with a Bluetooth USB dongle on the Pi and pairs with the bluetooth dongle on the train.  It then receives and decodes each RFID tag id and publishes it to MQTT.
 
 The topics are created using the name of the train and the senor tagID
-TrainDemo/trainName/location/TagID – example TrainDemo/OSGi1/location/010E9CE7DB
+TrainDemo/trainName/location/TagID ï¿½ example TrainDemo/OSGi1/location/010E9CE7DB
 
 The attributes reported are:
 - Train Name (e.g. OSGi1, OSGi2)
@@ -30,7 +30,7 @@ The attributes reported are:
 - location (e.g. tagID: 010E9CE7DB )
 
 The bundle also reports when it connects and disconnects from the Bluetooth on the train using the following topic:
-TrainDemo/trainName/connection – Example TrainDemo/OSGi1/connection
+TrainDemo/trainName/connection ï¿½ Example TrainDemo/OSGi1/connection
 
 Attribiutes reported are:
 - TrainID (e.g. OSGI1, OSGi2)
